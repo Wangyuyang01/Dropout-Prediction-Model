@@ -55,15 +55,15 @@ BCE
 
 | Model |best_auc   | rmse  |  Hyperparameters  |
 |:------|:-------------:|:-------------:|:-------------:|
-| DPCNN | 0.7884 | 0.4480 | 4.6578 |batch_size: 64 ,lr: 0.01 ,wd: 1e-4, dropout_p: 0.5|
-| LR    | 0.7739 | 0.4371 | 4.6173 |batch_size: 64 ,lr: 0.001 ,wd: 1e-5               |
+| DPCNN | 0.7884 | 0.4480 |batch_size: 64 ,lr: 0.01 ,wd: 1e-4, dropout_p: 0.5|
+| LR    | 0.7739 | 0.4371 | batch_size: 64 ,lr: 0.001 ,wd: 1e-5  |
 
 MSE
 
 | Model |best_auc   | rmse  |  Hyperparameters  |
 |:------|:-------------:|:-------------:|:-------------:|
-| DPCNN | 0.7709 | 0.1137 | 0.0558 |batch_size: 64 ,lr: 0.001 ,wd: 1e-3, dropout_p: 0.2|
-| LR    | 0.7255 | 0.4510 | 5.1155 |batch_size: 64 ,lr: 0.001 ,wd: 1e-5                |
+| DPCNN | 0.7709 | 0.1137 | batch_size: 64 ,lr: 0.001 ,wd: 1e-3, dropout_p: 0.2|
+| LR    | 0.7255 | 0.4510 | batch_size: 64 ,lr: 0.001 ,wd: 1e-5                |
 
 ## References
 * DPCNN：[Student dropout prediction in massive open online courses by convolutional neural networks](https://link.springer.com/content/pdf/10.1007/s00500-018-3581-3.pdf?pdf=button)
