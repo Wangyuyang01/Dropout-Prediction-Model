@@ -48,13 +48,7 @@ def run(epoch, datas, model, optimizer, device, model_name="None", run_type="tra
     y_preds = np.array([])
     y_trues_2 = np.array([])
     y_preds_2 = np.array([])
-    #mask
-    y_trues_filtered = np.array([])
-    y_preds_filtered = np.array([])
-    y_trues_2_filtered = np.array([])
-    y_preds_2_filtered = np.array([])
-
-    training_features = None
+    
     all_loss = 0
     if (run_type == "train"):
         model.train()
@@ -71,12 +65,6 @@ def run(epoch, datas, model, optimizer, device, model_name="None", run_type="tra
         av = av.to(device)
         y = y.to(device)
         if (run_type == "train"):
-            av_uv = torch.concat((av.reshape(-1, av.shape[1] * av.shape[2]), uv.reshape(-1, uv.shape[1])), dim=1)
-            # training_feature [data_num, day * a_field_dim + u_field_dim]
-            if (training_features == None):
-                training_features = av_uv
-            else:
-                training_features = torch.concat((training_features, av_uv), dim=0)
             optimizer.zero_grad()
         # y:(Proportion of active days):batch_size * 1
         y = y[:, 0].reshape(-1, 1)
