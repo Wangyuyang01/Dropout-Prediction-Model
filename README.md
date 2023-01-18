@@ -24,7 +24,7 @@ You can also install the Python packages in env_create.sh.
 $ sh env_create.sh
 ```
 ## Dataset
-KDDCUP 2015：(http://moocdata.cn/data/user-activity#User%20Activity)
+KDDCUP 2015：http://moocdata.cn/data/user-activity#User%20Activity
 ## Training and Running
 Execute training process by main.py.
 * batch_size: The batch size of the training process. Default: 64
