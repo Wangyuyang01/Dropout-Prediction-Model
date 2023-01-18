@@ -32,6 +32,7 @@ Execute training process by main.py.
 * learning_rate: The learning of the optimizer for the training process. Default: 0.005
 * weight_decay: The weight decay of optimizer. Default: 1e-5
 * seed: The random seed of dataset. Default: 1
+
 The specific execution methods of each model are listed below:
 1. DPCNN
   Here is an example for using DPCNN model:
