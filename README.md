@@ -11,12 +11,13 @@ The requiring environment is as bellow:
 * Numpy
 * Pandas
 ```
-conda create -n DPCNN python=3
+conda create -n DPCNN python=3.6 -y
 conda activate DPCNN
-pip install torch
+pip install torch==1.10.2
 pip install numpy
 pip install pandas
 pip install scikit-learn
+pip install matplotlib
 ```
 You can also install the Python packages in env_create.sh.
 ```
