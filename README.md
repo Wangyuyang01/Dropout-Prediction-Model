@@ -1,2 +1,67 @@
 # Dropout Prediction model project
-一些模型的复现
+The collection of the following Dropout Prediction algorithms:
+* Student dropout prediction in massive open online courses by convolutional neural networks (DPCNN)
+* Logistic Regression (LR)
+## Setups
+The requiring environment is as bellow:
+* Ubantu
+* Python 3+
+* PyTorch
+* Scikit-learn
+* Numpy
+* Pandas
+```
+conda create -n DPCNN python=3
+conda activate DPCNN
+pip install torch
+pip install numpy
+pip install pandas
+pip install scikit-learn
+```
+You can also install the Python packages in env_create.sh.
+```
+$ sh env_create.sh
+```
+## Dataset
+KDDCUP 2015：(http://moocdata.cn/data/user-activity#User%20Activity)
+## Training and Running
+Execute training process by main.py.
+* batch_size: The batch size of the training process. Default: 64
+* max_iter: The number of iterations. Default: 100
+* learning_rate: The learning of the optimizer for the training process. Default: 0.005
+* weight_decay: The weight decay of optimizer. Default: 1e-5
+* seed: The random seed of dataset. Default: 1
+The specific execution methods of each model are listed below:
+1. DPCNN
+  Here is an example for using DPCNN model:
+  ```
+  $ python main.py --model_name 'DPCNN' --weight_decay 1.00E-03 --dropout_p 0.2 --learning_rate 0.001 --seed 1 --LossFun 'MSE'  --DataSet  'KDD'
+  ```
+2. LR
+  Here is an example for using LR model:
+  ```
+  $ python main.py --model_name 'LR' --weight_decay 1.00E-05  --learning_rate 0.001 --seed 1 --LossFun 'BCE'  --DataSet  'KDD'
+  ```
+The following bash command will help you:
+```
+$ python main.py -h
+```
+## Trainning Results
+### KDD Data
+
+BCE
+
+| Model |best_auc   | rmse  |
+|:------|:-------------:|:-------------:|
+| DPCNN | 0.7884 | 0.4480 | 4.6578 |
+| LR    | 0.7739 | 0.4371 | 4.6173 |
+
+MSE
+
+| Model |best_auc   | rmse  |
+|:------|:-------------:|:-------------:|
+| DPCNN | 0.7709 | 0.1137 | 0.0558 |
+| LR    | 0.7255 | 0.4510 | 5.1155 |
+
+## References
+* DPCNN：[Student dropout prediction in massive open online courses by convolutional neural networks](https://link.springer.com/content/pdf/10.1007/s00500-018-3581-3.pdf?pdf=button)
