@@ -67,6 +67,11 @@ MSE
 | LR    | 0.7255 | 0.4510 | batch_size: 64 ,lr: 0.001 ,wd: 1e-5                |
 
 
+## References
+* DPCNN：[Student dropout prediction in massive open online courses by convolutional neural networks](https://link.springer.com/content/pdf/10.1007/s00500-018-3581-3.pdf?pdf=button)
+
+
+
 
 ## 开题绘制的实验结果表（无用可删）
  ### kddcup15   
@@ -83,6 +88,3 @@ MSE
 | CLSA  | 0.9474±0.0117 | 0.3554±0.0358 | 0.3018±0.0579 |
 | CLMS	| 0.9679±0.0004 | 0.3160±0.0043 | 0.2351±0.0047 |
 | CNN	  | 0.9718±0.0155 | 0.3031±0.0120 | 0.2394±0.0331 |
- 
-## References
-* DPCNN：[Student dropout prediction in massive open online courses by convolutional neural networks](https://link.springer.com/content/pdf/10.1007/s00500-018-3581-3.pdf?pdf=button)
