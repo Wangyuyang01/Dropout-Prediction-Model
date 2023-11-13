@@ -66,5 +66,32 @@ MSE
 | DPCNN | 0.7709 | 0.1137 | batch_size: 64 ,lr: 0.001 ,wd: 1e-3, dropout_p: 0.2|
 | LR    | 0.7255 | 0.4510 | batch_size: 64 ,lr: 0.001 ,wd: 1e-5                |
 
+MODEL & AUC  & RMSE  & MAE   & AUC  & RMSE & MAE\\ \hline
+CAL	  
+&$0.8656\pm0.0412$	
+&$0.4440\pm0.0049$	&$0.3800\pm0.0065$
+&$0.9589\pm0.0065$	
+&$0.3359\pm0.0808$	&$0.2742\pm0.0972$ \\ \hline
+CLSA	
+&$0.8551\pm0.0204$	
+&$0.4233\pm0.0010$	&$0.3595\pm0.0016$
+&$0.9474\pm0.0117$	
+&$0.3554\pm0.0358$	&$0.3018\pm0.0579$\\ \hline
+% DPCNN 
+% &$0.9028\pm0.0001$ 
+% &$0.3839\pm0.0006$	&$0.3004\pm0.0022$
+% &$0.9654\pm0.0188$	
+% &$0.3462\pm0.0616$	&$0.2743\pm0.0928$\\ \hline
+CLMS	
+&$0.8899\pm0.0005$ 
+&$0.4303\pm0.0026$	&$0.4022\pm0.0055$
+&$0.9679\pm0.0004$	
+&$0.3160\pm0.0043$	&$0.2351\pm0.0047$\\ \hline
+CNN	
+&$0.8842\pm0.0438$ 
+&$0.4046\pm0.0011$	&$0.3449\pm0.0021$
+&$0.9718\pm0.0155$ 
+&$0.3031\pm0.0120$	&$0.2394\pm0.0331$\\ \hline
+
 ## References
 * DPCNN：[Student dropout prediction in massive open online courses by convolutional neural networks](https://link.springer.com/content/pdf/10.1007/s00500-018-3581-3.pdf?pdf=button)
